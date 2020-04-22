@@ -1,3 +1,3 @@
 sudo docker rm -f splunk
-sudo bash backup-config.sh
-sudo bash docker.sh
+bash -v backup-config.sh
+bash -v docker.sh

@@ -3,7 +3,7 @@ APP_EXPORTER_APP_URL="https://splunkbase.splunk.com/app/2613/release/1.2.1/downl
 NGINX_APP_URL=`curl -s https://api.github.com/repos/shaneqi/splunk-app-nginx/releases/latest | jq -r .tarball_url`
 CASHFLOW_APP_URL=`curl -s https://api.github.com/repos/shaneqi/splunk-app-cashflow/releases/latest | jq -r .tarball_url`
 
-docker run \
+sudo docker run \
 -d \
 --name splunk \
 -v `pwd`/data:/data:ro \
